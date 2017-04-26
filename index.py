@@ -2,24 +2,13 @@ import picamera
 
 from colorthief import ColorThief
 
-camera = PiCamera()
+camera = picamera.PiCamera()
 camera.resolution = (1024, 768)
 camera.start_preview()
 
 from time import sleep
 
 file_name = "image_temp.png"
-
-sleep(2)
-while True:
-    ## take picture
-    take_picture()
-
-    ## Determine if red or green
-    dominate_color = check_dominate_color()
-    print dominate_color
-
-    ## make request to server if red or green
 
 def take_picture():
     print "Taking picture..."
@@ -44,3 +33,14 @@ def check_dominate_color():
     # build a color palette
     #palette = color_thief.get_palette(color_count=6)
     #print palette
+
+sleep(2)
+while True:
+    ## take picture
+    take_picture()
+
+    ## Determine if red or green
+    dominate_color = check_dominate_color()
+    print dominate_color
+
+    ## make request to server if red or green
