@@ -37,7 +37,7 @@ def check_dominate_color():
     #palette = color_thief.get_palette(color_count=6)
     #print palette
 
-def check_dominate_color(dominate_color):
+def report_status(dominate_color):
     r = requests.get(server_url, params={"color": dominate_color} )
     print r.status_code
     print r.content
