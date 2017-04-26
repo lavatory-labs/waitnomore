@@ -6,3 +6,6 @@ Team:
 - Kaela
 - Yunchi
 - Tadas? Where he is
+
+## Hardware
+- Raspberry Pi
