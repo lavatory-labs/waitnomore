@@ -18,7 +18,6 @@ def take_picture():
     print "Taking picture..."
     camera.capture(file_name)
 
-
 def check_dominate_color():
     color_thief = ColorThief(file_name)
     # get the dominant color
@@ -27,9 +26,11 @@ def check_dominate_color():
     r, g, b = dominant_color
 
     if r > g:
-        return "red"
+        ## color is red
+        return "occupied"
     elif g > r:
-        return "green"
+        ## color is green
+        return "available"
     else:
         return "error"
 
