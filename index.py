@@ -12,7 +12,7 @@ from time import sleep
 
 file_name = "image_temp.png"
 
-server_url = "http://requestb.in/1a52gtf1"
+server_url = "https://waitnomore.herokuapp.com/bathroom_status"
 
 def take_picture():
     print "Taking picture..."
